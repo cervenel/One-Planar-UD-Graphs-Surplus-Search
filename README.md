@@ -19,7 +19,7 @@ The algorithm explores the configuration space by iterating through all feasible
 2.  **Outer Loop (Upper Reduction)**: The script iteratively removes vertices from the upper trapezoid one by one until the upper section is completely removed ($a=0$).
 3.  **Inner Loop (Lower Reduction)**: After vertex removal in the outer loop (representing an intermediate state of the top section), the script iteratively removes vertices from the bottom trapezoid one by one until the bottom section is completely removed ($b=0$).
 
-At every single vertex removal, the script calculates the current $e$ and compares it to $u_0(n)$. The first time a graph that satisfies $e \ge u_0(n)$ (or $e \geq u_0(n)$, depends on the condition *if diff >=0* or *if diff >0*) for a specific $n$ is found, its parameters are locked into the table.
+At every single vertex removal, the script calculates the current $e$ and compares it to $u_0(n)$. The first time a graph that satisfies $e > u_0(n)$ (or $e \geq u_0(n)$, depends on the condition if diff > 0 or if diff $\geq$ 0) for a specific $n$ is found, its parameters are locked into the table.
 
 
 ### Parameters
