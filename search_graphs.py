@@ -29,7 +29,7 @@ def check_and_write(n, e, k, t, a_f, a_p, b_f, b_p):
         harborth = math.floor(3 * n - math.sqrt(12 * n - 3))
         diff = e - harborth
         
-        if diff >=0 and pd.isna(df.at[n, "diff"]):
+        if diff >0 and pd.isna(df.at[n, "diff"]):
             df.at[n, "diff"] = int(diff)
             df.at[n, "k"] = int(k)
             df.at[n, "t"] = int(t)
