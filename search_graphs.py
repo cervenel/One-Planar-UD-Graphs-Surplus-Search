@@ -5,8 +5,8 @@ import pandas as pd
 MAX_N = 1367
 MIN_N = 2  
 
-k_values = range(25, -1, -1)
-t_values = range(35, 0, -1)
+k_values = range(26, -1, -1)
+t_values = range(37, 0, -1)
 
 
 rows_count = MAX_N - MIN_N + 1
