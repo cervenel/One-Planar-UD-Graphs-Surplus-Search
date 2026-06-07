@@ -41,7 +41,7 @@ The results are exported as a CSV file with the following columns:
 
 ## Reproducibility
 
-The version of the script used for the results in paper presented at EuroCG 2026 is preserved as [Release v1.0](../../releases/tag/v1.0). The current `main` branch contains updated logic to search for the maximum possible surplus across the ranges of the parameters.
+The version of the script used for the results in paper presented at EuroCG 2026 is preserved as [Release v1.0](../../releases/tag/v1.0-conference). The current `main` branch contains updated logic to search for the maximum possible surplus across the ranges of the parameters.
 
 ## Requirements
 - Python 3.x
