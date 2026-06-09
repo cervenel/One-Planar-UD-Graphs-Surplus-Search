@@ -4,7 +4,7 @@ Search for 1-planar unit distance graphs exceeding the maximum number of edges o
 
 This repository contains a Python tool designed for the computational verification of the number of edges of a **specific family of 1-planar unit distance graphs**, denoted as $G_{t,k,a,b}$. 
 
-The project aims to demonstrate that this specific geometric construction (and subgraphs derived from it) can provide 1-planar unit distance graphs with the number of edges that equals or exceeds the maximum number of edges possible in a **matchstick graph** (a planar unit distance graph) on the same number of $n$ vertices.
+The project aims to demonstrate that this specific geometric construction (and subgraphs derived from it) can provide 1-planar unit distance graphs with the number of edges that equals or exceeds the maximum number of edges possible in a **matchstick graph** (a planar unit distance graph) on the same number $n$ of vertices.
 We compare our construction against the upper bound for matchstick graphs, conjectured by **Harborth** $u_0(n)=\lfloor 3n - \sqrt{12n - 3} \rfloor$.
 
 ## The $G_{t,k,a,b}$ Construction
