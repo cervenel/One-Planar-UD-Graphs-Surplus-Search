@@ -2,7 +2,7 @@
 Search for 1-planar unit distance graphs exceeding the maximum number of edges of matchstick graphs.
 
 
-This repository contains a Python tool designed for the computational verification of the number of edges of a **specific family of 1-planar unit distance graphs**, denoted as $G_{t,k}$. 
+This repository contains a Python tool designed for the computational verification of the number of edges of a **specific family of 1-planar unit distance graphs**, denoted as $G_{t,k,a,b}$. 
 
 The project aims to demonstrate that this specific geometric construction (and subgraphs derived from it) can provide 1-planar unit distance graphs with the number of edges that equals or exceeds the maximum number of edges possible in a **matchstick graph** (a planar unit distance graph).
 We compare our construction against the upper bound for matchstick graphs, conjectured by **Harborth** $u_0(n)=\lfloor 3n - \sqrt{12n - 3} \rfloor$.
@@ -19,7 +19,7 @@ The algorithm explores the configuration space by iterating through all feasible
 2.  **Outer Loop (Upper Reduction)**: The script iteratively removes vertices from the upper trapezoid one by one until the upper section is completely removed ($a=0$).
 3.  **Inner Loop (Lower Reduction)**: After vertex removal in the outer loop (representing an intermediate state of the top section), the script iteratively removes vertices from the bottom trapezoid one by one until the bottom section is completely removed ($b=0$).
 
-At every single vertex removal, the script calculates the current $e$ and compares it to $u_0(n)$. The script compares the surplus of every valid subgraph found. For each $n$, it stores only the parameters that yield the absolute maximum surplus encountered during the search. The output includes a row for every $n$ in the defined range. If no graph with a surplus ($diff \ge 0$) was found for a specific $n$, the corresponding row will remain empty.
+At every single vertex removal, the script calculates the current number of edges $e$ and compares it to $u_0(n)$. The script compares the surplus of every valid subgraph found. For each $n$, it stores only the parameters that yield the absolute maximum surplus encountered during the search. The output includes a row for every $n$ in the defined range. If no graph with a surplus (diff $\ge 0$) was found for a specific $n$, the corresponding row will remain empty.
 
 ### Parameters
 *   **`k`**: Width of the core.
