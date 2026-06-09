@@ -1,5 +1,5 @@
 # One-Planar-UD-Graphs-Surplus-Search
-Search for 1-planar unit distance graphs exceeding the maximum number of edges of matchstick graphs.
+Search for 1-planar unit distance graphs exceeding the maximum number of edges of matchstick graphs
 
 
 This repository contains a Python tool designed for the computational verification of the number of edges of a **specific family of 1-planar unit distance graphs**, denoted as $G_{t,k,a,b}$. 
