@@ -34,7 +34,7 @@ At every single vertex removal, the script calculates the current number of edge
 
 The results are exported as a CSV file with the following columns: 
 - `n`: Number of vertices.
-- `diff`: The edge surplus ($e - u_0(n)$).
+- `diff`: The edge surplus $(e - u_0(n))$.
 - `k`, `t`: Width and height of the core.
 - `a_full`, `a_part`: Current state of the top trapezoid.
 - `b_full`, `b_part`: Current state of the bottom trapezoid.
