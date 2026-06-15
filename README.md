@@ -13,6 +13,15 @@ The graph construction consists of a **core** of concatenated copies of a prism 
 *   **Part A**: A trapezoidal part consisting of $a$ paths of triangles attached to the top of the core.
 *   **Part B**: A trapezoidal part consisting of $b$ paths of triangles attached to the bottom of the core.
 
+<p align="center">
+  <img src="images/G_k,t,a,b.png" width="45%" alt="Graph A">
+  <img src="images/G_5,10,2,3.png" width="35%" alt="Graph B">  
+</p>
+
+<p align="center">
+  Figure 1:  A graph $G_{k,t,a,b}$, where the parameters refer to the number of edges (left) and graph $G_{5,10,2,3}$ (right).
+</p>
+
 The algorithm explores the configuration space by iterating through all feasible parameters $t \in [1, 37]$ and $k \in [0, 26]$. For each combination $(t, k)$, the procedure follows a nested reduction strategy:
 
 1.  **Initialization**: We start with the graph $G_{t,k,a,b}$ with maximum trapezoidal attachments, specifically $a=k$ and $b=k+1$.
@@ -39,6 +48,14 @@ The results are exported as a CSV file with the following columns:
 - `a_full`, `a_part`: Current state of the top trapezoid.
 - `b_full`, `b_part`: Current state of the bottom trapezoid.
 
+<p align="center">
+  <img src="images/G_search.png" alt="Graph2" width="40%">
+</p>
+
+<p align="center">
+  Figure 2: A graph resulting from the search, where the parameters refer to the number of vertices
+</p>
+
 ## Reproducibility
 
 The version of the script used for the results in paper presented at EuroCG 2026 is preserved as [Release v1.0](../../releases/tag/v1.0-conference). The current `main` branch contains updated logic to search for the maximum possible surplus across the ranges of the parameters.
@@ -48,31 +65,3 @@ The version of the script used for the results in paper presented at EuroCG 2026
 - pandas
 - numpy
 
-
-<p align="center">
-  <img src="images/G_k,t,a,b.png" alt="Graph1" width="60%">
-</p>
-
-<p align="center">
-  Figure 1: A graph $G_{k,t,a,b}$, where the parameters refer to the number of edges
-</p>
-
-
-<p align="center">
-  <img src="images/G_search.png" alt="Graph2" width="40%">
-</p>
-
-<p align="center">
-  Figure 1: A graph $G_{k,t,a,b}$, where the parameters refer to the number of edges
-</p>
-
-
-
-<p align="center">
-  <img src="images/G_search.png" width="45%" alt="Graph A">
-  <img src="images/G_k,t,a,b.png" width="45%" alt="Graph B">
-</p>
-
-<p align="center">
-  Figure 1: Comparison between Graph A calculating $f(x) = x^2$ and Graph B calculating $g(x) = \sqrt{x}$.
-</p>
