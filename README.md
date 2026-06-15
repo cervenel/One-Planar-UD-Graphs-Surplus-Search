@@ -48,4 +48,5 @@ The version of the script used for the results in paper presented at EuroCG 2026
 - pandas
 - numpy
 
-![Graph](images/mezikrok.png)
+![Graph](images/G_k,t,a,b.png)
+![Graph](images/G_search.png)
