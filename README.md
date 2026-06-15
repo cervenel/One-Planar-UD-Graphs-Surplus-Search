@@ -48,5 +48,31 @@ The version of the script used for the results in paper presented at EuroCG 2026
 - pandas
 - numpy
 
-![Graph](images/G_k,t,a,b.png)
-![Graph](images/G_search.png)
+
+<p align="center">
+  <img src="images/G_k,t,a,b.png" alt="Graph1" width="60%">
+</p>
+
+<p align="center">
+  Figure 1: A graph $G_{k,t,a,b}$, where the parameters refer to the number of edges
+</p>
+
+
+<p align="center">
+  <img src="images/G_search.png" alt="Graph2" width="40%">
+</p>
+
+<p align="center">
+  Figure 1: A graph $G_{k,t,a,b}$, where the parameters refer to the number of edges
+</p>
+
+
+
+<p align="center">
+  <img src="images/G_search.png" width="45%" alt="Graph A">
+  <img src="images/G_k,t,a,b.png" width="45%" alt="Graph B">
+</p>
+
+<p align="center">
+  Figure 1: Comparison between Graph A calculating $f(x) = x^2$ and Graph B calculating $g(x) = \sqrt{x}$.
+</p>
